@@ -19,6 +19,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -89,7 +90,9 @@ public class UserAdministrator implements Administrator{
 			
 			inputFile.delete();
 			
-			Path source = tempFile.toPath();
+			//Path source = tempFile.toPath();
+                        //Files.move(source, source.resolveSibling("demo.txt"));
+                        Path source = Paths.get("C:/Users/dan_1/Desktop/Files/demo.txt");
                         Files.move(source, source.resolveSibling("demo.txt"));
 				
 

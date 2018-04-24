@@ -76,6 +76,7 @@ public class HelloWorldRestController {
          @RequestMapping(value = "/user/delete/{id}", method = RequestMethod.DELETE)
              public ResponseEntity<String> deleteUser(@PathVariable("id") String id) {
              
+                 
                  userAdministrator.deleteAccount(id);
             
                  

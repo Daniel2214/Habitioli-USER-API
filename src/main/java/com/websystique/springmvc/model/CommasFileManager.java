@@ -66,6 +66,7 @@ public class CommasFileManager implements FileManager{
 			PrintWriter printWriter = new PrintWriter(fileWriter);
 		    printWriter.print(user.getMail()+",");
 		    printWriter.println(user.getName());
+                    fileWriter.close();
 		    printWriter.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
